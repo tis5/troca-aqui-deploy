@@ -49,4 +49,8 @@ build-iPhoneSimulator/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
-config/master.key
+#key db
+/config/master.key
+
+# RubyMine
+.idea
