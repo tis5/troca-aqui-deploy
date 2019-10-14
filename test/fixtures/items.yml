@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  categoria: MyString
+  valor_aprox: 1.5
+  desejo: MyString
+  quant: 1
+  pessoa: one
+  disp: false
+
+two:
+  nome: MyString
+  categoria: MyString
+  valor_aprox: 1.5
+  desejo: MyString
+  quant: 1
+  pessoa: two
+  disp: false
