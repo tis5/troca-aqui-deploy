@@ -1,5 +1,6 @@
-class RegistrationController < ApplicationController
+class RegistrationsController < ApplicationController
 
+  # POST /registrations
   def create
     user = User.create!(
                    email: params['user']['email'],
@@ -7,7 +8,7 @@ class RegistrationController < ApplicationController
                    password_confirmation: params['user']['password_confirmation'],
 
     )
-  end
+
 
   if user
 
@@ -20,6 +21,8 @@ class RegistrationController < ApplicationController
   else
 
     render json: { status: 418 }
+
+  end
 
   end
 
