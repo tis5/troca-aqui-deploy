@@ -1,0 +1,423 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API V1",
+    "version": "v1"
+  },
+  "paths": {
+    "/registrations": {
+      "post": {
+        "summary": "realiza o cadastro",
+        "tags": [
+          "Cadastro"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "User",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email",
+                "password"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Login Ok"
+          }
+        }
+      }
+    },
+    "/sessions": {
+      "post": {
+        "summary": "realiza o login",
+        "tags": [
+          "Login"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "User",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email",
+                "password"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Login Ok"
+          }
+        }
+      }
+    },
+    "/items": {
+      "post": {
+        "summary": "Creates an item",
+        "tags": [
+          "Items"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Item",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "categoria": {
+                  "type": "string"
+                },
+                "valor_aprox": {
+                  "type": "float"
+                },
+                "desejo": {
+                  "type": "string"
+                },
+                "quant": {
+                  "type": "integer"
+                },
+                "pessoa_id": {
+                  "type": "integer"
+                },
+                "disp": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "nome",
+                "categoria",
+                "valor_aprox",
+                "desejo",
+                "quant",
+                "pessoa_id",
+                "disp"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Item created"
+          },
+          "422": {
+            "description": "invalid request"
+          }
+        }
+      }
+    },
+    "/items/{id}": {
+      "get": {
+        "summary": "Retorna item",
+        "tags": [
+          "Items"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "categoria": {
+                    "type": "string"
+                  },
+                  "valor_aprox": {
+                    "type": "float"
+                  },
+                  "desejo": {
+                    "type": "string"
+                  },
+                  "quant": {
+                    "type": "integer"
+                  },
+                  "pessoa_id": {
+                    "type": "integer"
+                  },
+                  "disp": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "nome",
+                  "categoria",
+                  "valor_aprox",
+                  "desejo",
+                  "quant",
+                  "pessoa_id",
+                  "disp"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deleta item",
+        "tags": [
+          "Items"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "categoria": {
+                  "type": "string"
+                },
+                "valor_aprox": {
+                  "type": "float"
+                },
+                "desejo": {
+                  "type": "string"
+                },
+                "quant": {
+                  "type": "integer"
+                },
+                "pessoa_id": {
+                  "type": "integer"
+                },
+                "disp": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "nome",
+                "categoria",
+                "valor_aprox",
+                "desejo",
+                "quant",
+                "pessoa_id",
+                "disp"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/pessoas": {
+      "post": {
+        "summary": "Cria pessoa",
+        "tags": [
+          "Pessoas"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Pessoa",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "cidade": {
+                  "type": "string"
+                },
+                "data_nasc": {
+                  "type": "datetime"
+                },
+                "telefone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "nome",
+                "email",
+                "cidade",
+                "data_nasc",
+                "telefone"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Pessoa created"
+          },
+          "422": {
+            "description": "invalid request"
+          }
+        }
+      }
+    },
+    "/pessoas/{id}": {
+      "get": {
+        "summary": "Retorna pessoa",
+        "tags": [
+          "Pessoas"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "cidade": {
+                  "type": "string"
+                },
+                "data_nasc": {
+                  "type": "datetime"
+                },
+                "telefone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "nome",
+                "email",
+                "cidade",
+                "data_nasc",
+                "telefone"
+              ]
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deleta pessoa",
+        "tags": [
+          "Pessoas"
+        ],
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "cidade": {
+                  "type": "string"
+                },
+                "data_nasc": {
+                  "type": "datetime"
+                },
+                "telefone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "nome",
+                "email",
+                "cidade",
+                "data_nasc",
+                "telefone"
+              ]
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
