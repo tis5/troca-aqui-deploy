@@ -4,7 +4,7 @@ postgresql_settings: &postgresql_settings
   pool: 50
   username: <%= Rails.application.credentials[:POSTGRES_USER] %>
   password: <%= Rails.application.credentials[:POSTGRES_PASSWORD] %>
-  host: <%= Rails.application.credentials[:POSTGRES_HOST] %>
+  host: 34.68.137.106
   port: 5432
 
 development:
@@ -13,4 +13,14 @@ development:
 production:
   <<: *postgresql_settings
   database: <%= Rails.application.credentials[:POSTGRES_PRODUCTION] %>
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 50
+  username: root
+  password:
+  host: localhost
+  port: 5432
+  database: api_test
   
