@@ -23,8 +23,12 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'rest-client', '>=2.0.0'
+
 gem 'rswag'
 gem 'rspec-core'
+
+gem 'bunny','>= 2.13.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors', :require => 'rack/cors'

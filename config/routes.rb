@@ -14,8 +14,14 @@ Rails.application.routes.draw do
   #Controle de cadastro
   resources :registrations, only: [:create]
 
+
+  # Logout
   delete :logout, to: "sessions#logout"
+  # Login check
   get :logged_in, to: "sessions#logged_in"
+
+  
+
 
   # items
   resources :items
