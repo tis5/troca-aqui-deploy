@@ -20,10 +20,14 @@ class SessionsController < ApplicationController
   end
 
   def logged_in
-   if $user && $user!=0
-     render json: {logged_in: true, user: $user[:email]}
-   else render json: {logged_in: false}
-   end
+
+      if $user && $user!=0
+        render json: {status: 200, logged_in: true}
+      else render json: {status: 200, logged_in: false}
+
+      end
+
+
   end
 
   def logout
