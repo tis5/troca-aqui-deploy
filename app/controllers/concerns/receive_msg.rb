@@ -1,12 +1,7 @@
 require 'bunny'
+class ReceiveMsg
 
-module ReceiveMsg
-  connection = Bunny.new(
-      :host => "35.238.95.239",
-      :port => 5672,
-      :vhost => "/",
-      :user => "sadminmq",
-      :pass => "eFJ1Na1Gp45a")
+  connection = Bunny.new "amqp://jtdwviby:Ap8KyZ5dQ2JCsZvUYVT33cFwZtJP28u6@salamander.rmq.cloudamqp.com/jtdwviby"
 
   connection.start
 
@@ -16,16 +11,18 @@ module ReceiveMsg
   fila=channel.queue('envios_tis', durable: true)
 
 
-  channel.default_exchange.publish('Hello World, again!', routing_key: fila.name)
-
   begin
-    puts ' [*] Waiting for messages. To exit press CTRL+C'
+    puts ' [*] Aguardando mensagens. Para sair pressione CTRL+C'
 
     fila.subscribe(block: true) do |_delivery_info, _properties, body|
-      puts " [x] Received #{body}"
+      puts " [x] Nova msg:  #{body}"
     end
   rescue Interrupt => _
+    puts "\n saindo..."
+
     connection.close
+
+    puts "\n pronto!"
 
     exit(0)
   end

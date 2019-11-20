@@ -9,11 +9,10 @@ module UserLoggedIn
       resp = RestClient.get "#{url}/logged_in"
       resp_json = JSON.parse(resp.body)
 
-      if resp_json["logged_in"]!= false
-        puts resp_json["user"]
-        return resp_json["user"]
+      if resp_json["logged_in"]!=false
+        puts resp_json["logged_in"]
+        return resp_json["logged_in"]
       end
     end
-
 
 end

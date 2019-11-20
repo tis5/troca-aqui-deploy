@@ -1,17 +1,18 @@
 class SessionsController < ApplicationController
 
+
   def create
-    user = User
+    @user = User
                .find_by(email: params["user"]["email"])
                .try(:authenticate,params["user"]["password"])
-    $user=user
 
-    if user
 
+    if @user
+      $user=@user
       render json: {
           status: :created,
           logged_in: true,
-          user: user
+          user: @user
 
       }
     else

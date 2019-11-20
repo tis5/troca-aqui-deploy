@@ -6,6 +6,11 @@ ruby '>=2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 
+# RubyCritic qualidade de codigo
+gem "rubycritic", require: false
+
+
+
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -29,6 +34,8 @@ gem 'rswag'
 gem 'rspec-core'
 
 gem 'bunny','>= 2.13.0'
+
+gem 'dotenv'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors', :require => 'rack/cors'

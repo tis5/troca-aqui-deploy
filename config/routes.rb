@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # Login check
   get :logged_in, to: "sessions#logged_in"
 
-  
+
 
 
   # items
