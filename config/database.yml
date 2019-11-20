@@ -2,17 +2,17 @@ postgresql_settings: &postgresql_settings
   adapter: postgresql
   encoding: unicode
   pool: 50
-  username: <%= Rails.application.credentials[:POSTGRES_USER] %>
-  password: <%= Rails.application.credentials[:POSTGRES_PASSWORD] %>
-  host: 34.68.137.106
+  username: postgres
+  password: postgres
+  host: localhost
   port: 5432
 
 development:
   <<: *postgresql_settings
-  database: <%= Rails.application.credentials[:POSTGRES_DB] %>		
+  database: troca_db_development
 production:
   <<: *postgresql_settings
-  database: <%= Rails.application.credentials[:POSTGRES_PRODUCTION] %>
+  database: troca_db_production
 
 test:
   adapter: postgresql
@@ -22,5 +22,5 @@ test:
   password:
   host: localhost
   port: 5432
-  database: api_test
+  database: troca_db_test
   

@@ -1,3 +1,0 @@
-env: flex
-runtime: ruby
-entrypoint: bundle exec rails s --port $PORT
