@@ -1,18 +1,11 @@
-require 'rest-client'
-require 'json'
-module UserLoggedIn
-    urls = %w[
-     troca-aqui-api-e7p5jefkcq-uc.a.run.app
-     localhost:3000
-      ]
-    urls.each do |url|
-      resp = RestClient.get "#{url}/logged_in"
-      resp_json = JSON.parse(resp.body)
+require 'bootsnap/load_path_cache/core_ext/active_support'
+module CurrentUserConcern
 
-      if resp_json["logged_in"]!=false
-        puts resp_json["logged_in"]
-        return resp_json["logged_in"]
-      end
+  included {before_action :set_current_user}
+
+  def set_current_user
+    if session[:user_id]
+      @current_user = User.find(session[:user_id])
     end
-
+  end
 end

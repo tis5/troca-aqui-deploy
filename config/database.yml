@@ -3,8 +3,8 @@ postgresql_settings: &postgresql_settings
   encoding: unicode
   pool: 50
   username: postgres
-  password: postgres
-  host: localhost
+  password: d1ZrAsDaNGG5
+  host: 35.222.137.96
   port: 5432
 
 development:
@@ -12,7 +12,7 @@ development:
   database: troca_db_development
 production:
   <<: *postgresql_settings
-  database: troca_db_production
+  database: troca_db_development
 
 test:
   adapter: postgresql
