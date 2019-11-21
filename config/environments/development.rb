@@ -9,6 +9,8 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  config.hosts << "troca-aqui-api-e7p5jefkcq-uc.a.run.app"
+
   # Show full error reports.
   config.consider_all_requests_local = true
 

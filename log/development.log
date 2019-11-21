@@ -65,3 +65,1266 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 10ms (Views: 2.4ms | ActiveRecord: 2.2ms | Allocations: 3138)
 
 
+Started GET "/" for ::1 at 2019-10-31 11:29:50 -0300
+Processing by IndexController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-10-31 11:29:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (162.1ms)[0m  [1m[35mCREATE DATABASE "troca_development" ENCODING = 'unicode'[0m
+  [1m[35m (151.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2972099242039112955)[0m
+  [1m[35m (432.5ms)[0m  [1m[35mCREATE DATABASE "api_test" ENCODING = 'unicode'[0m
+  [1m[35m (156.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (152.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (153.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2972099242039112955)[0m
+  [1m[35m (156.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (156.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (152.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (158.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (155.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (156.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (152.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (157.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (154.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (154.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (156.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "da39a3ee5e6b4b0d3255bfef95601890afd80709"], ["updated_at", "2019-10-31 14:56:42.250826"], ["key", "schema_sha1"]]
+  [1m[35m (156.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "items" CASCADE[0m
+  [1m[35m (21.2ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "nome" character varying, "categoria" character varying, "valor_aprox" float, "desejo" character varying, "quant" integer, "pessoa_id" bigint NOT NULL, "disp" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE  INDEX  "index_items_on_pessoa_id" ON "items"  ("pessoa_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "messages" CASCADE[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "pessoas" CASCADE[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "pessoas" ("id" bigserial primary key, "nome" character varying, "email" character varying, "cidade" character varying, "data_nasc" timestamp, "telefone" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mALTER TABLE "items" ADD CONSTRAINT "fk_rails_ef7b06d962"
+FOREIGN KEY ("pessoa_id")
+  REFERENCES "pessoas" ("id")
+[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191023125637)[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-31 14:56:43.022567"], ["updated_at", "2019-10-31 14:56:43.022567"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-10-31 14:56:43.033532"], ["key", "environment"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "e81f808f9fc3f9e951d805987489c7f2d4818284"], ["created_at", "2019-10-31 14:56:43.051867"], ["updated_at", "2019-10-31 14:56:43.051867"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (156.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (153.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."nome" = $1 LIMIT $2[0m  [["nome", "Celular"], ["LIMIT", 1]]
+  [1m[36mItem Load (153.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."nome" = $1 LIMIT $2[0m  [["nome", "Halliday livro"], ["LIMIT", 1]]
+  [1m[36mItem Load (155.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."nome" = $1 LIMIT $2[0m  [["nome", "Livro Teste"], ["LIMIT", 1]]
+  [1m[36mPessoa Load (153.1ms)[0m  [1m[34mSELECT "pessoas".* FROM "pessoas" WHERE "pessoas"."nome" = $1 LIMIT $2[0m  [["nome", "Peter"], ["LIMIT", 1]]
+  [1m[36mPessoa Load (153.5ms)[0m  [1m[34mSELECT "pessoas".* FROM "pessoas" WHERE "pessoas"."nome" = $1 LIMIT $2[0m  [["nome", "Aqualung"], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-10-31 12:55:53 -0300
+Processing by IndexController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:38:43 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (148.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 1373ms (Views: 0.6ms | ActiveRecord: 900.0ms | Allocations: 7097)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:38:54 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:39:30 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (149.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 1000ms (Views: 0.5ms | ActiveRecord: 605.1ms | Allocations: 4698)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:39:35 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:40:06 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (148.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 900ms (Views: 0.3ms | ActiveRecord: 601.2ms | Allocations: 4731)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:40:10 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 154)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:41:11 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (149.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 896ms (Views: 0.4ms | ActiveRecord: 604.3ms | Allocations: 4731)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:41:15 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 158)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:42:52 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 910ms (ActiveRecord: 608.5ms | Allocations: 4414)
+
+
+  
+FrozenError (can't modify frozen Hash):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started POST "/sessions" for ::1 at 2019-11-06 07:43:37 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 906ms (Views: 0.4ms | ActiveRecord: 609.8ms | Allocations: 4580)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:43:50 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 157)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:45:17 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (153.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 899ms (Views: 0.4ms | ActiveRecord: 605.7ms | Allocations: 4516)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:45:22 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 449ms (Views: 0.4ms | ActiveRecord: 151.7ms | Allocations: 822)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:45:28 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:46:03 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 900ms (Views: 0.4ms | ActiveRecord: 604.0ms | Allocations: 4516)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:46:09 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:46:39 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (148.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 893ms (Views: 0.4ms | ActiveRecord: 598.8ms | Allocations: 4553)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:46:45 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:50:27 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 904ms (Views: 0.4ms | ActiveRecord: 603.6ms | Allocations: 4522)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:50:33 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:51:29 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:51:35 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 917ms (Views: 0.4ms | ActiveRecord: 610.9ms | Allocations: 4479)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:51:41 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:52:51 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 909ms (Views: 0.6ms | ActiveRecord: 608.4ms | Allocations: 4571)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:52:55 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:57:06 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 897ms (Views: 0.6ms | ActiveRecord: 603.4ms | Allocations: 4558)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:57:12 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:58:09 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 185)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:58:32 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (149.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 899ms (Views: 0.3ms | ActiveRecord: 606.6ms | Allocations: 4624)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:58:37 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 145)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:59:40 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 185)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 07:59:44 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 905ms (Views: 0.4ms | ActiveRecord: 612.6ms | Allocations: 4518)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 07:59:50 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 145)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 08:00:57 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 905ms (Views: 0.6ms | ActiveRecord: 607.6ms | Allocations: 4560)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:03:24 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 187)
+
+
+Started GET "/logged_in/2" for ::1 at 2019-11-06 08:03:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logged_in/2"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/logged_in/1" for ::1 at 2019-11-06 08:04:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logged_in/1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:04:08 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 182)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:05:54 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:07:20 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 241)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:07:37 -0300
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 762)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-11-06 08:07:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:08:40 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 221)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:09:13 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:10:33 -0300
+  
+ActionController::RoutingError (undefined local variable or method `cookies' for SessionsController:Class):
+  
+app/controllers/sessions_controller.rb:4:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started POST "/sessions" for ::1 at 2019-11-06 08:11:38 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 894ms (ActiveRecord: 607.4ms | Allocations: 4576)
+
+
+  
+FrozenError (can't modify frozen Hash):
+  
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/sessions" for ::1 at 2019-11-06 08:11:56 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 901ms (Views: 0.4ms | ActiveRecord: 607.3ms | Allocations: 4562)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 08:13:12 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 899ms (ActiveRecord: 605.9ms | Allocations: 4834)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:15:in `create'
+Started POST "/sessions" for ::1 at 2019-11-06 08:16:21 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (152.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 895ms (Views: 0.5ms | ActiveRecord: 605.5ms | Allocations: 4562)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:16:27 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 171)
+
+
+  
+KeyError (key not found: "email"):
+  
+app/controllers/sessions_controller.rb:32:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:17:08 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 202)
+
+
+  
+KeyError (key not found: "user"):
+  
+app/controllers/sessions_controller.rb:32:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:17:49 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 188)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:18:14 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 198)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:18:39 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 202)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 08:20:27 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (148.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 1091ms (ActiveRecord: 607.1ms | Allocations: 92878)
+
+
+  
+NameError (undefined local variable or method `user' for #<SessionsController:0x00007fdbcc8dac20>
+Did you mean?  super):
+  
+app/controllers/sessions_controller.rb:15:in `create'
+Started POST "/sessions" for ::1 at 2019-11-06 08:24:59 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (151.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+Completed 200 OK in 899ms (Views: 0.4ms | ActiveRecord: 603.2ms | Allocations: 4059)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:25:36 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 202)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:26:02 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 174)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 08:26:36 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (152.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 200 OK in 894ms (Views: 0.4ms | ActiveRecord: 608.6ms | Allocations: 4545)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:26:43 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:27:24 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 554)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:27:49 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:28:28 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 08:29:20 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 160)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 08:30:17 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 200 OK in 895ms (Views: 0.4ms | ActiveRecord: 605.5ms | Allocations: 4548)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:30:23 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 171)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 08:30:29 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 122)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:30:33 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_controller.rb:29:in `[]'
+app/controllers/sessions_controller.rb:29:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:33:33 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 147)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_controller.rb:27:in `[]'
+app/controllers/sessions_controller.rb:27:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:34:43 -0300
+Processing by SessionsController#logged_in as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 145)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_controller.rb:27:in `[]'
+app/controllers/sessions_controller.rb:27:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:35:15 -0300
+Processing by SessionsController#logged_in as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 145)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_controller.rb:27:in `[]'
+app/controllers/sessions_controller.rb:27:in `logged_in'
+Started DELETE "/logout" for ::1 at 2019-11-06 08:41:12 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (150.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:33:in `logout'
+Completed 404 Not Found in 1069ms (ActiveRecord: 908.0ms | Allocations: 1814)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=0):
+  
+app/controllers/sessions_controller.rb:33:in `logout'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:42:13 -0300
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 148)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 08:42:18 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (153.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:33:in `logout'
+Completed 404 Not Found in 627ms (ActiveRecord: 617.0ms | Allocations: 1620)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=0):
+  
+app/controllers/sessions_controller.rb:33:in `logout'
+Started POST "/sessions" for ::1 at 2019-11-06 08:43:01 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (148.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 200 OK in 601ms (Views: 0.4ms | ActiveRecord: 148.1ms | Allocations: 3611)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:43:09 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 127)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 08:43:41 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 146)
+
+
+  
+ArgumentError (You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`.):
+  
+app/controllers/sessions_controller.rb:33:in `logout'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:43:56 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 126)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 08:45:10 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1055)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:33:in `logout'
+Started GET "/logged_in" for ::1 at 2019-11-06 08:45:20 -0300
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 130)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 08:46:14 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 160)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:46:20 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 08:46:58 -0300
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 108)
+
+
+Started GET "/api-docs" for ::1 at 2019-11-06 08:57:52 -0300
+Started GET "/api-docs/index.html" for ::1 at 2019-11-06 08:57:54 -0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-11-06 08:57:54 -0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-11-06 08:57:54 -0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-11-06 08:57:54 -0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-11-06 08:57:54 -0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-11-06 08:57:54 -0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-11-06 08:57:56 -0300
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2019-11-06 08:57:57 -0300
+Started GET "/api-docs/index.html" for ::1 at 2019-11-06 09:03:17 -0300
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2019-11-06 09:03:18 -0300
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2019-11-06 09:03:18 -0300
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2019-11-06 09:03:18 -0300
+Started GET "/api-docs/v1/swagger.json" for ::1 at 2019-11-06 09:03:18 -0300
+Started POST "/pessoas" for ::1 at 2019-11-06 09:03:29 -0300
+Processing by PessoasController#create as JSON
+  Parameters: {"nome"=>"string", "email"=>"string", "cidade"=>"string", "data_nasc"=>"Unknown Type: datetime", "telefone"=>"string", "pessoa"=>{"nome"=>"string", "email"=>"string", "cidade"=>"string", "data_nasc"=>"Unknown Type: datetime", "telefone"=>"string"}}
+  [1m[35m (149.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[36mPessoa Exists? (152.9ms)[0m  [1m[34mSELECT 1 AS one FROM "pessoas" WHERE "pessoas"."email" = $1 LIMIT $2[0m  [["email", "string"], ["LIMIT", 1]]
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[36mPessoa Create (149.9ms)[0m  [1m[32mINSERT INTO "pessoas" ("nome", "email", "cidade", "telefone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "string"], ["email", "string"], ["cidade", "string"], ["telefone", "string"], ["created_at", "2019-11-06 12:03:31.140944"], ["updated_at", "2019-11-06 12:03:31.140944"]]
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[35m (152.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+Completed 201 Created in 824ms (Views: 1.6ms | ActiveRecord: 1219.8ms | Allocations: 10628)
+
+
+Started POST "/pessoas" for ::1 at 2019-11-06 09:03:49 -0300
+Processing by PessoasController#create as JSON
+  Parameters: {"nome"=>"string", "email"=>"string", "cidade"=>"string", "data_nasc"=>"Unknown Type: datetime", "telefone"=>"string", "pessoa"=>{"nome"=>"string", "email"=>"string", "cidade"=>"string", "data_nasc"=>"Unknown Type: datetime", "telefone"=>"string"}}
+  [1m[35m (151.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[36mPessoa Exists? (151.7ms)[0m  [1m[34mSELECT 1 AS one FROM "pessoas" WHERE "pessoas"."email" = $1 LIMIT $2[0m  [["email", "string"], ["LIMIT", 1]]
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[35m (148.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+Completed 422 Unprocessable Entity in 486ms (Views: 0.4ms | ActiveRecord: 452.1ms | Allocations: 5809)
+
+
+Started POST "/pessoas" for ::1 at 2019-11-06 09:04:04 -0300
+Processing by PessoasController#create as JSON
+  Parameters: {"nome"=>"string", "email"=>"email@com.com", "cidade"=>"string", "data_nasc"=>"Unknown Type: datetime", "telefone"=>"string", "pessoa"=>{"nome"=>"string", "email"=>"email@com.com", "cidade"=>"string", "data_nasc"=>"Unknown Type: datetime", "telefone"=>"string"}}
+  [1m[35m (151.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[36mPessoa Exists? (152.2ms)[0m  [1m[34mSELECT 1 AS one FROM "pessoas" WHERE "pessoas"."email" = $1 LIMIT $2[0m  [["email", "email@com.com"], ["LIMIT", 1]]
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[36mPessoa Create (152.2ms)[0m  [1m[32mINSERT INTO "pessoas" ("nome", "email", "cidade", "telefone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "string"], ["email", "email@com.com"], ["cidade", "string"], ["telefone", "string"], ["created_at", "2019-11-06 12:04:05.343814"], ["updated_at", "2019-11-06 12:04:05.343814"]]
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+  [1m[35m (151.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pessoas_controller.rb:20:in `create'
+Completed 201 Created in 619ms (Views: 0.7ms | ActiveRecord: 606.9ms | Allocations: 3509)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 10:06:38 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (150.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 200 OK in 1409ms (Views: 0.9ms | ActiveRecord: 915.7ms | Allocations: 9045)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 10:22:53 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 154)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 10:34:23 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 10:42:50 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 10:47:49 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 10:49:10 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 10:53:38 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started GET "/senders" for ::1 at 2019-11-06 11:11:36 -0300
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/senders_controller.rb:2:in `<main>'
+Started GET "/logged_in" for ::1 at 2019-11-06 11:17:12 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+  [1m[35m (148.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2972099242039112955)[0m
+  [1m[35m (151.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (149.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (149.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(2972099242039112955)[0m
+  [1m[35m (153.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/sessions" for ::1 at 2019-11-06 14:40:24 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (156.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 200 OK in 1435ms (Views: 0.6ms | ActiveRecord: 945.6ms | Allocations: 6950)
+
+
+Started POST "/logged_in" for ::1 at 2019-11-06 14:40:42 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/logged_in"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/logged_in" for ::1 at 2019-11-06 14:40:51 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 123)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 14:46:02 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (155.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 921ms (Views: 1.7ms | ActiveRecord: 629.0ms | Allocations: 4523)
+
+
+Started POST "/logged_in" for ::1 at 2019-11-06 14:47:47 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/logged_in"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/sessions" for ::1 at 2019-11-06 14:48:02 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (156.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 923ms (Views: 0.4ms | ActiveRecord: 632.2ms | Allocations: 4554)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 14:48:39 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (155.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 923ms (Views: 0.5ms | ActiveRecord: 626.9ms | Allocations: 4502)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 14:50:24 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (155.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 923ms (Views: 0.5ms | ActiveRecord: 630.4ms | Allocations: 4522)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 14:50:53 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (156.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 447ms (Views: 1.5ms | ActiveRecord: 156.5ms | Allocations: 819)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 14:54:35 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+No template found for SessionsController#logged_in, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 1696)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:02:40 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+No template found for SessionsController#logged_in, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 159)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 15:03:52 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (156.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 200 OK in 1395ms (Views: 0.5ms | ActiveRecord: 951.8ms | Allocations: 4686)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:05:28 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+No template found for SessionsController#logged_in, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 159)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 15:09:03 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (158.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 926ms (ActiveRecord: 636.2ms | Allocations: 4793)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:8:in `create'
+Started POST "/sessions" for ::1 at 2019-11-06 15:10:44 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (159.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 933ms (ActiveRecord: 635.8ms | Allocations: 4765)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:8:in `create'
+Started POST "/sessions" for ::1 at 2019-11-06 15:13:41 -0300
+  
+ActionController::RoutingError (undefined local variable or method `session' for SessionsController:Class):
+  
+app/controllers/sessions_controller.rb:3:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started POST "/sessions" for ::1 at 2019-11-06 15:14:20 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (156.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 1157ms (ActiveRecord: 630.3ms | Allocations: 92930)
+
+
+  
+NameError (undefined local variable or method `user' for #<SessionsController:0x00007fe27e0debd0>
+Did you mean?  @user):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/sessions" for ::1 at 2019-11-06 15:14:49 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (156.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 200 OK in 923ms (Views: 0.5ms | ActiveRecord: 631.5ms | Allocations: 4552)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:15:29 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:36:39 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 130)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/sessions_controller.rb:36:in `logged_in'
+Started GET "/logged_in" for ::1 at 2019-11-06 15:37:37 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 186)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 15:37:55 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (155.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 1449ms (Views: 0.6ms | ActiveRecord: 976.6ms | Allocations: 6878)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:38:06 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 123)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:38:38 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 120)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 15:38:47 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 144)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:38:52 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 15:38:58 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste231@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (156.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste231@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 200 OK in 949ms (Views: 0.4ms | ActiveRecord: 642.7ms | Allocations: 4483)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:39:04 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 120)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:40:53 -0300
+Processing by IndexController#index as */*
+  Parameters: {"index"=>{}}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:41:27 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 153)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 15:41:55 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (159.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 200 OK in 930ms (Views: 0.6ms | ActiveRecord: 634.0ms | Allocations: 4510)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:42:00 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 120)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 15:42:38 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 144)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:46:23 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+No template found for SessionsController#logged_in, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 1696)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 15:50:03 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (155.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 200 OK in 933ms (Views: 0.4ms | ActiveRecord: 641.7ms | Allocations: 4594)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:50:56 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+No template found for SessionsController#logged_in, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 192)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:52:05 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 15:52:16 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:52:21 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:53:03 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 145)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:56:16 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 144)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 15:56:28 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (157.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 940ms (Views: 0.5ms | ActiveRecord: 641.2ms | Allocations: 4502)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:56:36 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 15:57:52 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 145)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 16:01:57 -0300
+Processing by SessionsController#logged_in as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 144)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 16:05:56 -0300
+Processing by SessionsController#logout as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 199)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 16:06:09 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started POST "/sessions" for ::1 at 2019-11-06 16:06:21 -0300
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"teste1@gma.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (233.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 1939ms (Views: 0.6ms | ActiveRecord: 1392.9ms | Allocations: 8423)
+
+
+Started GET "/logged_in" for ::1 at 2019-11-06 16:06:29 -0300
+Processing by SessionsController#logged_in as */*
+  Parameters: {"session"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 115)
+
+
