@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  resources :tokens, only: [:create, :update]
+
+  # GET por id pessoa
+  get "/tokenpessoa/:pessoa_id", to: "tokens#showpessoa"
+
+  get "/itemspessoa/:pessoa_id", to: "items#showpessoa"
+
+
   #Index
   root to: "index#index"
 

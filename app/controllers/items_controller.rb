@@ -13,6 +13,12 @@ class ItemsController < ApplicationController
     render json: @item
   end
 
+  # GET itemspessoa/1
+  def showpessoa
+    @items = Item.where(pessoa_id: params[:pessoa_id])
+    render json: @items
+  end
+
   # POST /items
   def create
     @item = Item.new(item_params)

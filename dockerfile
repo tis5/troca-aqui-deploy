@@ -12,6 +12,7 @@ COPY Gemfile.lock /myapp/Gemfile.lock
 
 # Install gem dependencies
 # RUN bundle install
+RUN gem install bundler
 RUN bundle install
 COPY . /myapp
 

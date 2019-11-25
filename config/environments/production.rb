@@ -10,6 +10,8 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+
+  config.hosts << "troca-aqui-api-e7p5jefkcq-uc.a.run.app"
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
 
