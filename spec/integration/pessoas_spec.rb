@@ -59,6 +59,46 @@ describe 'Pessoas' do
     end
     end
 
+     put 'Altera pessoa' do
+      tags 'Pessoas'
+      consumes 'application/json', 'application/xml'
+
+      parameter name: :id, :in => :path, :type => :string
+      parameter name: :Pessoa, in: :body, schema:{
+          type: :object,
+          properties: {
+              nome: { type: :string },
+              email: {type: :string },
+              cidade: {type: :string },
+              data_nasc: {type: :datetime },
+              telefone: {type: :string}
+          },
+
+      }
+
+      response '200', 'Ok' do
+        schema type: :object,
+               properties: {
+                   nome: { type: :string },
+                   email: {type: :string },
+                   cidade: {type: :string },
+                   data_nasc: {type: :datetime },
+                   telefone: {type: :string}
+               },
+               required: %w[]
+
+        let(:id) { Pessoa.update(
+            nome: :nome,
+            email: :email,
+            cidade: :cidade,
+            data_nasc: :data_nasc,
+            telefone: :telefone
+            ) }
+        run_test!
+        end
+      end
+
+
     delete 'Deleta pessoa' do
       tags 'Pessoas'
       consumes 'application/json', 'application/xml'
@@ -82,6 +122,6 @@ describe 'Pessoas' do
     end
 
   end
-
 end
+
 

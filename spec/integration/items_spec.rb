@@ -34,13 +34,13 @@ describe 'Items' do
     end
   end
 
-  path '/items/{id}' do
+  path '/itemspessoa/{pessoa_id}' do
 
-    get 'Retorna item' do
+    get 'Retorna items de pessoa' do
       tags 'Items'
       consumes 'application/json', 'application/xml'
 
-      parameter name: :id, :in => :path, :type => :string
+      parameter name: :pessoa_id, :in => :path, :type => :string
 
       response '200', 'Ok' do
         schema type: :object,
@@ -62,7 +62,9 @@ describe 'Items' do
         run_test!
       end
     end
+  end
 
+  path '/items/{id}' do
     delete 'Deleta item' do
       tags 'Items'
       consumes 'application/json', 'application/xml'
@@ -83,6 +85,48 @@ describe 'Items' do
                required: %w[nome categoria valor_aprox desejo quant pessoa_id disp]
 
         let(:id) { Item.delete(Item.all.first.id) }
+        run_test!
+      end
+    end
+    put 'Altera item' do
+      tags 'Items'
+      consumes 'application/json', 'application/xml'
+      parameter name: :id, :in => :path, :type => :string
+      parameter name: :Item, in: :body, schema:{
+          type: :object,
+          properties: {
+              nome: { type: :string },
+              categoria: {type: :string },
+              valor_aprox: {type: :float },
+              desejo: {type: :string },
+              quant:{type: :integer},
+              pessoa_id: {type: :integer},
+              disp: { type: :boolean }
+          },
+
+      }
+
+      response '200', 'Ok' do
+        schema type: :object,
+               properties: {
+                   nome: { type: :string },
+                   categoria: {type: :string },
+                   valor_aprox: {type: :float },
+                   desejo: {type: :string },
+                   quant:{type: :integer},
+                   pessoa_id: {type: :integer},
+                   disp: { type: :boolean }
+               },
+               required: %w[]
+
+        let(:Item) { Item.update(nome: :nome,
+                                 categoria: :categoria,
+                                 valor_aprox: :valor_aprox,
+                                 desejo: :desejo,
+                                 quant: :quant,
+                                 pessoa_id: :pessoa_id,
+                                 disp: :disp
+                                 ) }
         run_test!
       end
     end

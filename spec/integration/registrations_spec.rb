@@ -2,15 +2,16 @@ require 'swagger_helper'
 describe 'Cadastro' do
 
   path '/registrations' do
-    post 'realiza o cadastro' do
+    post 'realiza o cadastro - para testar, passar user' do
       tags 'Cadastro'
       consumes 'application/json', 'application/xml'
 
       parameter name: :User, in: :body, schema: {
           type: :object,
           properties: {
-              email: {type: :string},
-              password: {type: :string}
+                  email: {type: :string},
+                  password: {type: :string}
+
           },
           required: %w[ email password]
       }

@@ -3,15 +3,16 @@ require 'swagger_helper'
 describe 'Login' do
 
   path '/sessions' do
-    post 'realiza o login' do
+    post 'realiza o login - para testar passar o user' do
       tags 'Login'
       consumes 'application/json', 'application/xml'
 
       parameter name: :User, in: :body, schema: {
           type: :object,
           properties: {
-              email: {type: :string},
-              password: {type: :string}
+                  email: {type: :string},
+                  password: {type: :string}
+
           },
           required: %w[ email password]
       }
