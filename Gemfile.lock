@@ -141,7 +141,7 @@ GEM
     pg (1.1.4)
     psych (3.1.0)
     public_suffix (4.0.1)
-    puma (3.12.3)
+    puma (3.12.6)
     rack (2.0.8)
     rack-cors (1.1.0)
       rack (>= 2.0.0)
@@ -265,7 +265,7 @@ GEM
       equalizer (~> 0.0, >= 0.0.9)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     zeitwerk (2.2.1)
 
 PLATFORMS
